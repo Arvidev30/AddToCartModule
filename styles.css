@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    padding: 20px;
+    color: #333;
+}
+  
+.container{
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+}
+
+.hr-with-text {
+    display: flex;
+    color: rgb(239, 91, 116);
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+  }
+
+.hr-with-text::before,
+.hr-with-text::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #9f9b9b;
+}
+
+.hr-with-text:not(:empty)::before {
+    margin-right: 0.75em;
+  }
+
+.hr-with-text:not(:empty)::after {
+    margin-left: 0.75em;
+  }
+ 
+
+.percent-off{
+    display: inline-block;
+    background: #ff5c8d;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 14px;
+    margin-left: 10px;
+  }  
+
+input[type="radio"] {
+    accent-color: #ff5c8d;
+    transform: scale(1.2);
+    margin-right: 10px;
+  } 
+
+.most-popular {
+    position:absolute;
+    top: -10px;
+    right: 5px;
+    background: #ff5c8d;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 0 0 0 8px;
+  }  
+
+  .option {
+    margin-top: 10px;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .option:hover {
+    border-color: #ff69b4;
+  }
+  
+  .product-options {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  .product-options select {
+    margin: 5px;
+    padding: 5px;
+  }  
+
+.price {
+    margin-left: 80%;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+.old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+
+  .free-delivery {
+    color: #ff5c8d;
+    
+  }
+  
+  .total {
+    font-weight: bold;
+    
+  }
+ .add-to-cart {
+    background: #ff5c8d;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+  }  
+  
+  
+  /* Show options when radio is checked */
+  #unit1:checked ~ .options + .product-options,
+  #unit2:checked ~ .options + .product-options,
+  #unit3:checked ~ .options + .product-options {
+    display:block;
+  }
+  
+  /* Highlight */
+  #unit1:checked + .options,
+  #unit2:checked + .options,
+  #unit3:checked + .options {
+    
+    background-color: #ffeef5;
+  }
+
+ 
+

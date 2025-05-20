@@ -33,7 +33,21 @@ body {
 .hr-with-text:not(:empty)::after {
     margin-left: 0.75em;
   }
- 
+
+.option {
+    position: relative;
+    margin-top: 10px;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+.option:hover {
+    border-color: #ff69b4;
+  }
 
 .percent-off{
     display: inline-block;
@@ -74,30 +88,21 @@ input[type="radio"] {
     border-radius: 0 0 0 8px;
   }  
 
-  .option {
-    margin-top: 10px;
-    display: block;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 5px;
-    cursor: pointer;
-    border-radius: 8px;
-  }
-  
-  .option:hover {
-    border-color: #ff69b4;
-  }
-  
-  .product-options {
+.product-options {
     display: none;
     margin-top: 10px;
     padding-left: 20px;
   }
-
-  .product-options select {
+  
+.product-options select {
     margin: 5px;
     padding: 5px;
   }  
+
+.bottom{
+    display: flex;
+    padding: 30px 0px;
+}
 
 .price {
     margin-left: 80%;
